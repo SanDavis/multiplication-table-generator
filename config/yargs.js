@@ -9,7 +9,7 @@ const argv = require('yargs').options('b', {
     alias: 'hasta',
     type: number,
     demandOption: true,
-    describe: 'Indica el hasta qué numero se ha de generar la tabla'
+    describe: 'Indica hasta qué numero se ha de generar la tabla'
 }).check((argv, options) => {
 
     if (isNaN(argv.base) || isNaN(argv.hasta)) {
